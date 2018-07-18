@@ -1,0 +1,275 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "id": "http://schemas.datacubed.com/server/survey.json",
+  "definitions": {
+    "timestamp_survey": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^\\d{4}-(0[1-9]|1[1,2])-[0-3]\\dT([0,1]\\d|2[0-4]):[0-6]\\d:[0-6]\\d.\\d{3}(z|Z)$"
+    }
+  },
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "attribution_text": {
+          "type": "string"
+        },
+        "deploy": {
+          "type": "string"
+        },
+        "display_icon": {
+          "type": "string"
+        },
+        "display_name": {
+          "type": "string"
+        },
+        "est_duration": {
+          "type": "string",
+          "enum": ["short", "medium", "long"]
+        },
+        "expire": {
+          "type": "string"
+        },
+        "gamification_points": {
+          "type": "number"
+        },
+        "priority": {
+          "type": "string"
+        },
+        "randomize_questions": {
+          "type": "boolean"
+        },
+        "schedule": {
+          "type": "object",
+          "properties": {
+            "cohort": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "filter": {
+                  "type": "object",
+                  "properties": {
+                    "include": {
+                      "type": "array",
+                      "items": {
+                        "type": "number"
+                      }
+                    },
+                    "max_age": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "min_age": {
+                      "type": "number",
+                      "minimum": 0
+                    }
+                  }
+                }
+              },
+              "required": ["type"]
+            },
+            "deploy": {
+              "type": "object",
+              "properties": {
+                "first_login": {
+                  "type": "object",
+                  "properties": {
+                    "interval": {
+                      "type": "number"
+                    },
+                    "interval_type": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "now": {
+                  "type": "null"
+                },
+                "absolute": {
+                  "type": "number"
+                }
+              }
+            },
+            "expire": {
+              "type": "object",
+              "properties": {
+                "never": {
+                  "type": "null"
+                }
+              }
+            },
+            "recurring": {
+              "type": "object",
+              "properties": {
+                "interval": {
+                  "type": "number"
+                },
+                "interval_type": {
+                  "type": "string"
+                },
+                "recurrences": {
+                  "type": "number"
+                },
+                "scheme": {
+                  "type": "string"
+                },
+                "visible_days": {
+                  "type": "number"
+                }
+              }
+            }
+          },
+          "required": ["cohort", "expire", "deploy"]
+        },
+        "type": {
+          "type": "string"
+        },
+        "version": {
+          "type": "number"
+        },
+        "visibility": {
+          "type": "string"
+        },
+        "visibilityRanges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "end": {
+                "anyOf": [
+                  {
+                    "$ref": "#/definitions/timestamp_survey"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "start": {
+                "anyOf": [
+                  {
+                    "$ref": "#/definitions/timestamp_survey"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "order": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "questions": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z0-9]{7}$": {
+          "type": "object",
+          "properties": {
+            "attributes": {
+              "type": "object",
+              "properties": {
+                "randomize_options": {
+                  "type": "boolean"
+                },
+                "required": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "choices": {
+              "type": "object",
+              "patternProperties": {
+                ".*": {
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": "string"
+                    }
+                  },
+                  "required": ["label"]
+                }
+              }
+            },
+            "choices_order": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "label": {
+              "type": "string"
+            },
+            "logic": {
+              "type": "object",
+              "properties": {
+                "show_if": {
+                  "type": "object",
+                  "properties": {
+                    "comparator": {
+                      "type": "string"
+                    },
+                    "operator": {
+                      "type": "string",
+                      "enum": ["and", "or"]
+                    },
+                    "terms": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "comparator": {
+                            "type": "string"
+                          },
+                          "question_id": {
+                            "type": "string"
+                          },
+                          "question_type": {
+                            "type": "string"
+                          },
+                          "value": {
+                            "anyOf": [
+                              {
+                                "type": "string"
+                              },
+                              {
+                                "type": "number"
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "type": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "title": {
+      "type": "string"
+    }
+  },
+  "required": ["id", "metadata", "order", "questions", "title"]
+}
