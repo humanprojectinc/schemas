@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "id": "https://schemas.datacubed.com/android/004/survey.json",
+    "id": "https://schemas.datacubed.com/android/survey/004.json",
     "index": "https://schemas.datacubed.com/index.json",
     "items": {
         "properties": {

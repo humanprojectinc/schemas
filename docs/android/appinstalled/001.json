@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "id": "https://schemas.datacubed.com/android/001/appsinstalled.json",
+    "id": "https://schemas.datacubed.com/android/appsinstalled/001.json",
     "index": "https://schemas.datacubed.com/index.json",
     "type": "array",
     "items":    {

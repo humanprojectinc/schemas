@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "id": "https://schemas.datacubed.com/ios/003/battery.json",
+    "id": "https://schemas.datacubed.com/ios/battery/003.json",
     "index": "https://schemas.datacubed.com/index.json",
     "type": "array",
     "items":    {

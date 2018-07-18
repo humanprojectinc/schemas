@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "id": "https://schemas.datacubed.com/android/002/task.json",
+    "id": "https://schemas.datacubed.com/android/task/002.json",
     "index": "https://schemas.datacubed.com/index.json",
     "type": "array",
     "items":    {
