@@ -39,9 +39,6 @@
       "003": "https://schemas.datacubed.com/android/stepcounter/003.json"
     }
   },
-  "server": {
-    "survey": "https://schemas.datacubed.com/server/survey.json"
-  },
   "definitions": "https://schemas.datacubed.com/definitions.json",
   "index": "https://schemas.datacubed.com/index.json"
 }
