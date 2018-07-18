@@ -1,13 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "id": "http://schemas.datacubed.com/server/survey.json",
-  "definitions": {
-    "timestamp_survey": {
-      "type": "string",
-      "format": "date-time",
-      "pattern": "^\\d{4}-(0[1-9]|1[1,2])-[0-3]\\dT([0,1]\\d|2[0-4]):[0-6]\\d:[0-6]\\d.\\d{3}(z|Z)$"
-    }
-  },
+  "index": "https://schemas.datacubed.com/index.json",
   "type": "object",
   "properties": {
     "id": {
@@ -145,7 +139,7 @@
               "end": {
                 "anyOf": [
                   {
-                    "$ref": "#/definitions/timestamp_survey"
+                    "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
                   },
                   {
                     "type": "null"
@@ -155,7 +149,7 @@
               "start": {
                 "anyOf": [
                   {
-                    "$ref": "#/definitions/timestamp_survey"
+                    "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
                   },
                   {
                     "type": "null"
