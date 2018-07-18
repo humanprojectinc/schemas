@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "http://hpi.nyc/schemas/ios/001/contacts.json",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "givenName": {
+                "type": "string"
+            },
+            "familyName": {
+                "type": "string"
+            },
+            "organizationName": {
+                "type": "number",
+                "minimum": 0
+            },
+            "fetchDate": {
+                "type": "string"
+            },
+            "phoneNumbers": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "countryCode": {
+                            "type": "string"
+                        },
+                        "digits": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "required": [
+            "givenName",
+            "familyName",
+            "organizationName",
+            "phoneNumbers",
+            "fetchDate"
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "http://hpi.nyc/schemas/android/001/calls.json",
+    "type": "array",
+    "items":    {
+        "type": "object",
+        "properties": {
+            "phoneNumber": {
+                "type": "string"
+            },
+            "callType": {
+                "type": "string"
+            },
+            "date": {
+                "type": "string"
+            },
+            "duration": {
+                "type": "string"
+            }
+        },
+        "required": ["phoneNumber","callType","date","duration"]
+    }
+}
