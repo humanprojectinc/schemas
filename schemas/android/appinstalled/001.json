@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "https://schemas.datacubed.com/android/001/appsinstalled.json",
+    "type": "array",
+    "items":    {
+        "type": "object",
+        "properties": {
+            "applications": {
+                "type": "string"
+            },
+            "timestamp": {
+                "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
+            }
+        },
+        "required": ["applications","timestamp"]
+    }
+}
