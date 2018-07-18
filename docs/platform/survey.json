@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "id": "http://schemas.datacubed.com/server/survey.json",
+  "id": "http://schemas.datacubed.com/platform/survey.json",
   "index": "https://schemas.datacubed.com/index.json",
   "type": "object",
   "properties": {
