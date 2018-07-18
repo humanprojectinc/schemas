@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3b7865c-b222-4e64-8a76-02e2638b1b41" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/docs/android/appinstalled/001.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/appinstalled/001.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/android/battery/002.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/battery/002.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/android/location/002.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/location/002.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/android/stepcounter/003.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/stepcounter/003.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/android/survey/004.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/survey/004.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/android/task/002.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/task/002.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/definitions.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/definitions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/ios/battery/003.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ios/battery/003.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/ios/location/005.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ios/location/005.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/ios/stepcounter/005.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ios/stepcounter/005.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/ios/survey/006.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ios/survey/006.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/ios/task/004.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ios/task/004.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generate_index.py" beforeDir="false" afterPath="$PROJECT_DIR$/generate_index.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,24 +15,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="002.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/android/location/002.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="003.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/android/stepcounter/003.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="004.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/android/survey/004.json">
           <provider selected="true" editor-type-id="text-editor">
@@ -96,6 +69,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/index.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="generate_index.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/generate_index.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="004.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/ios/task/004.json">
           <provider selected="true" editor-type-id="text-editor">
@@ -105,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="definitions.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="definitions.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/definitions.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+            <state relative-caret-position="135">
+              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -144,7 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/generate_index.py" />
         <option value="$PROJECT_DIR$/docs/android/appinstalled/001.json" />
         <option value="$PROJECT_DIR$/docs/android/battery/002.json" />
         <option value="$PROJECT_DIR$/docs/android/location/002.json" />
@@ -157,6 +146,7 @@
         <option value="$PROJECT_DIR$/docs/ios/survey/006.json" />
         <option value="$PROJECT_DIR$/docs/ios/task/004.json" />
         <option value="$PROJECT_DIR$/docs/definitions.json" />
+        <option value="$PROJECT_DIR$/generate_index.py" />
       </list>
     </option>
   </component>
@@ -326,8 +316,8 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32916668" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32916668" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
@@ -351,19 +341,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generate_index.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/index.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/CNAME">
@@ -432,13 +409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/ios/survey/006.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/ios/task/004.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -448,8 +418,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/definitions.json">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/ios/survey/006.json">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+          <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/index.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generate_index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

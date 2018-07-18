@@ -3,6 +3,9 @@ import json
 import click
 
 
+# USAGE: python generate_index.py > docs/index.json
+
+
 @click.command()
 @click.option('--base', default='https://schemas.datacubed.com', help='Base URL.')
 @click.option('--path', default='docs', help='Directory to scan.')
@@ -22,8 +25,9 @@ def gen_idx(base, path, ext):
                 }).items() if len(v)
             }
         else:
-            if os.path.splitext(r_path)[1] == ext:
-                return base + r_path[len(path):]
+            f, e = os.path.splitext(r_path)
+            if e == ext:
+                return base + f[len(path):]
             else:
                 return {}
 
