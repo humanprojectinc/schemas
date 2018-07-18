@@ -18,16 +18,15 @@ def gen_idx(base, path, ext):
     def path_to_dict(r_path):
         if os.path.isdir(r_path):
             return {
-                k: v
+                os.path.splitext(k)[0]: v
                 for k, v in ({
                     x: path_to_dict(os.path.join(r_path, x))
                     for x in os.listdir(r_path)
                 }).items() if len(v)
             }
         else:
-            f, e = os.path.splitext(r_path)
-            if e == ext:
-                return base + f[len(path):]
+            if os.path.splitext(r_path)[1] == ext:
+                return base + r_path[len(path):]
             else:
                 return {}
 
