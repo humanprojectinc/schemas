@@ -5,7 +5,7 @@ import click
 
 @click.command()
 @click.option('--base', default='https://schemas.datacubed.com', help='Base URL.')
-@click.option('--path', default='schemas', help='Directory to scan.')
+@click.option('--path', default='docs', help='Directory to scan.')
 @click.option('--ext', default='.json', help='File extension to look for')
 def gen_idx(base, path, ext):
     """
