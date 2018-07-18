@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "id": "https://schemas.datacubed.com/ios/005/location.json",
+    "index": "https://schemas.datacubed.com/index.json",
     "type": "array",
     "items":    {
         "type": "object",

@@ -2,40 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3b7865c-b222-4e64-8a76-02e2638b1b41" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/android/appinstalled/001.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/appinstalled/001.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/battery/002.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/battery/002.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/bluetooth/001.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/calls/001.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gmail/001.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/location/001.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/location/002.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/location/002.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/sms/001.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/stepcounter/003.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/stepcounter/003.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/survey/004.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/survey/004.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/task/002.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/task/002.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generate_index.py" beforeDir="false" afterPath="$PROJECT_DIR$/generate_index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/battery/003.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ios/battery/003.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/bluetooth/001.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/contacts/001.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/gmail/001.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/location/001.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/location/005.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ios/location/005.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/stepcounter/005.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ios/stepcounter/005.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/survey/006.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ios/survey/006.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/task/004.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ios/task/004.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/android/appinstalled/001.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/appinstalled/001.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/android/battery/002.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/battery/002.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/android/location/002.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/location/002.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/android/stepcounter/003.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/stepcounter/003.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/android/survey/004.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/survey/004.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/android/task/002.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/task/002.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/definitions.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/definitions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/ios/battery/003.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ios/battery/003.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/ios/location/005.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ios/location/005.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/ios/stepcounter/005.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ios/stepcounter/005.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/ios/survey/006.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ios/survey/006.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/ios/task/004.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ios/task/004.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/android/appinstalled/001.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/appinstalled/001.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/android/battery/002.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/battery/002.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/android/location/002.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/location/002.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/android/stepcounter/003.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/stepcounter/003.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/android/survey/004.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/survey/004.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/android/task/002.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/android/task/002.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/definitions.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/definitions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ios/battery/003.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ios/battery/003.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ios/location/005.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ios/location/005.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ios/stepcounter/005.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ios/stepcounter/005.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ios/survey/006.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ios/survey/006.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ios/task/004.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ios/task/004.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,21 +24,94 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="generate_index.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/generate_index.py">
+      <file leaf-file-name="002.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/android/location/002.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="003.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/android/stepcounter/003.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="004.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/android/survey/004.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="002.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/android/task/002.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="003.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/ios/battery/003.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="005.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/ios/location/005.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="005.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/ios/stepcounter/005.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="006.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/ios/survey/006.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="004.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/ios/task/004.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="definitions.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docs/definitions.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -72,6 +123,21 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>.json&quot;,</find>
+      <find>.json&quot;,(\n)</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>.json&quot;,\n    &quot;index&quot;: &quot;https://schemas.datacubed.com/index.json&quot;,</replace>
+      <replace>.json&quot;,     &quot;index&quot;: &quot;https://schemas.datacubed.com/index.json&quot;,</replace>
+      <replace>.json&quot;,    &quot;index&quot;: &quot;https://schemas.datacubed.com/index.json&quot;,</replace>
+      <replace>&quot;index&quot;: &quot;https://schemas.datacubed.com/index.json&quot;,\n</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/docs</dir>
+    </dirStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -79,6 +145,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/generate_index.py" />
+        <option value="$PROJECT_DIR$/docs/android/appinstalled/001.json" />
+        <option value="$PROJECT_DIR$/docs/android/battery/002.json" />
+        <option value="$PROJECT_DIR$/docs/android/location/002.json" />
+        <option value="$PROJECT_DIR$/docs/android/stepcounter/003.json" />
+        <option value="$PROJECT_DIR$/docs/android/survey/004.json" />
+        <option value="$PROJECT_DIR$/docs/android/task/002.json" />
+        <option value="$PROJECT_DIR$/docs/ios/battery/003.json" />
+        <option value="$PROJECT_DIR$/docs/ios/location/005.json" />
+        <option value="$PROJECT_DIR$/docs/ios/stepcounter/005.json" />
+        <option value="$PROJECT_DIR$/docs/ios/survey/006.json" />
+        <option value="$PROJECT_DIR$/docs/ios/task/004.json" />
+        <option value="$PROJECT_DIR$/docs/definitions.json" />
       </list>
     </option>
   </component>
@@ -105,6 +183,100 @@
             <path>
               <item name="schemas" type="b2602c69:ProjectViewProjectNode" />
               <item name="schemas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schemas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schemas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schemas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+              <item name="appinstalled" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schemas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+              <item name="battery" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schemas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+              <item name="location" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schemas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+              <item name="stepcounter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schemas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+              <item name="survey" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schemas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+              <item name="task" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schemas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="ios" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schemas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="ios" type="462c0819:PsiDirectoryNode" />
+              <item name="battery" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schemas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="ios" type="462c0819:PsiDirectoryNode" />
+              <item name="location" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schemas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="ios" type="462c0819:PsiDirectoryNode" />
+              <item name="stepcounter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schemas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="ios" type="462c0819:PsiDirectoryNode" />
+              <item name="survey" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schemas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="ios" type="462c0819:PsiDirectoryNode" />
+              <item name="task" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -181,12 +353,6 @@
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/definitions.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/index.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/generate_index.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -194,6 +360,96 @@
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/index.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CNAME">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/android/appinstalled/001.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="56" lean-forward="true" selection-start-line="3" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/android/battery/002.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/android/location/002.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/android/stepcounter/003.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/android/survey/004.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/android/task/002.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/ios/battery/003.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/ios/location/005.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/ios/stepcounter/005.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/ios/survey/006.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/ios/task/004.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/definitions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
         </state>
       </provider>
     </entry>
