@@ -24,7 +24,10 @@
           "enum": ["short", "medium", "long"]
         },
         "gamification_points": {
-          "type": "number"
+          "anyOf": [
+            {"type": "number"},
+            {"type": "string"}
+          ]
         },
         "priority": {
           "type": "string"
