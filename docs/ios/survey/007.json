@@ -62,7 +62,8 @@
             "identity",
             "questions",
             "start",
-            "state"
+            "state",
+            "version"
         ],
         "type": "object"
     },
