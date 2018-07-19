@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "https://schemas.datacubed.com/ios/task/004.json",
+    "index": "https://schemas.datacubed.com/index.json",
+    "type": "array",
+    "items":    {
+        "type": "object",
+        "properties": {
+            "data": {
+                "type": "object",
+                "properties": {
+                  "data": {
+                    "type": "object",
+                    "properties": {
+                      "start": {
+                        "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
+                      }
+                    }
+                  },
+                  "end":{
+                     "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
+                  },
+                  "module": {
+                    "type": "string"
+                  },
+                  "start":{
+                    "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
+                  }
+                },
+                "required": ["data", "start", "end"]
+            },
+            "identity": {
+                "type": "string"
+            },
+            "gamification_points": {
+                "type": "number"
+            },
+            "version": {
+                "type": "number"
+            }
+        },
+        "required": ["data", "identity", "gamification_points", "version"]
+    },
+    "minItems": 1
+}
