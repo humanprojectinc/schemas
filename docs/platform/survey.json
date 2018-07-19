@@ -53,7 +53,10 @@
                     "include": {
                       "type": "array",
                       "items": {
-                        "type": "number"
+                        "anyOf": [
+                          {"type": "number"},
+                          {"type": "string"}
+                        ]
                       }
                     },
                     "max_age": {
