@@ -164,7 +164,7 @@
         }
       },
       "required": [
-        "attribution_text", "display_icon", "display_name", "est_duration", "gamification_points", "priority", "schedule", "type", "visibility"
+        "display_icon", "display_name", "est_duration", "gamification_points", "priority", "schedule", "type", "visibility"
       ]
     },
     "order": {
