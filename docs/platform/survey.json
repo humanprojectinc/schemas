@@ -30,7 +30,10 @@
           ]
         },
         "priority": {
-          "type": "string"
+          "anyOf": [
+            {"type": "string"},
+            {"type": "number"}
+          ]
         },
         "randomize_questions": {
           "type": "boolean"
