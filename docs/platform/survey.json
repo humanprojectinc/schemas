@@ -125,9 +125,6 @@
           },
           "required": ["cohort", "expire", "deploy"]
         },
-        "type": {
-          "type": "string"
-        },
         "version": {
           "type": "number"
         },
