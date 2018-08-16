@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "https://schemas.datacubed.com/ios/Twitter/003.json",
+    "index": "https://schemas.datacubed.com/index.json",
+    "type": "array",
+    "items":    {
+        "type": "object",
+        "properties": {
+            "text": {
+                "type": "object",
+                "properties": {
+                    "word_count": {
+                        "type": "number"
+                    }
+                }
+            },
+            "retweeted": {
+                "type": "boolean"
+            },
+            "entities": {
+                "type": "object",
+                "properties": {
+                    "hashtags": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "text": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "is_quote_status": {
+                "type": "boolean"
+            },
+            "favorite_count": {
+                "type": "number"
+            },
+            "created_at": {
+                "type": "string"
+            }
+        },
+        "required": ["text", "retweeted", "entities", "is_quote_status", "favorite_count", "created_at"]
+    },
+    "minItems": 1
+}

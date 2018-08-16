@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "https://schemas.datacubed.com/android/gmail/003.json",
+    "index": "https://schemas.datacubed.com/index.json",
+    "type": "array",
+    "items":    {
+        "type": "object",
+        "properties": {
+            "historyid": {
+                "type": "string"
+            },
+            "threadid": {
+                "type": "string"
+            },
+            "recipient": {
+                "type": "string"
+            },
+            "sender": {
+                "type": "string"
+            },
+            "username": {
+                "type": "string"
+            },
+            "timestamp": {
+                "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
+            }
+        },
+        "required": ["historyid", "threadid", "recipient", "sender", "username", "timestamp"]
+    },
+    "minItems": 1
+}

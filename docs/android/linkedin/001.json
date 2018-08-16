@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "https://schemas.datacubed.com/android/linkedin/001.json",
+    "index": "https://schemas.datacubed.com/index.json",
+    "type": "array",
+    "items":    {
+        "type": "object",
+        "properties": {
+            "SR_NO": {
+                "type": "string"
+            },
+            "ID": {
+                "type": "string"
+            },
+            "NAME": {
+                "type": "string"
+            },
+            "HEADLINE": {
+                "type": "string"
+            },
+            "INDUSTRY": {
+                "type": "string"
+            },
+            "NUM_CONNECTIONS": {
+                "type": "number"
+            },
+            "IS_NUM_CONNECTIONS_CAPPED": {
+                "type": "number"
+            },
+            "TIME": {
+                "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
+            }
+        },
+        "required": ["NAME", "INDUSTRY", "NUM_CONNECTIONS"]
+    },
+    "minItems": 1
+}
