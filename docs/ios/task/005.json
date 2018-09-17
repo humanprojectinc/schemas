@@ -9,14 +9,6 @@
             "data": {
                 "type": "object",
                 "properties": {
-                  "data": {
-                    "type": "object",
-                    "properties": {
-                      "start": {
-                        "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
-                      }
-                    }
-                  },
                   "end":{
                      "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
                   },
@@ -27,7 +19,7 @@
                     "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
                   }
                 },
-                "required": ["data", "start", "end"]
+                "required": ["module", "start", "end"]
             },
             "identity": {
                 "type": "string"
