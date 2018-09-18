@@ -46,7 +46,7 @@
                     "type": "string"
                   }
                 },
-                "required": ["start", "end"]
+                "required": ["start", "end", "module"]
             }
         },
         "required": ["data", "identity", "gamification_points","last_updated","title","display_icon","est_duration","version"]
