@@ -3,8 +3,6 @@
     "id": "https://schemas.datacubed.com/definitions.json",
     "index": "https://schemas.datacubed.com/index.json",
     "timestamp_def": {
-        "type": "string",
-        "format": "date-time",
-        "pattern": "^\\d{4}-(0[1-9]|1[1,2])-[0-3]\\dT([0,1]\\d|2[0-4]):[0-6]\\d:[0-6]\\d(([+-]\\d{2}:\\d{2})|(.\\d{3}(z|Z|-(\\d{4}|\\d{2}:\\d{2}))))$"
+        "type": "string"
     }
 }
