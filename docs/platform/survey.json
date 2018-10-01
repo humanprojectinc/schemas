@@ -24,10 +24,16 @@
           "enum": ["short", "medium", "long"]
         },
         "gamification_points": {
-          "type": "number"
+          "anyOf": [
+            {"type": "number"},
+            {"type": "string"}
+          ]
         },
         "priority": {
-          "type": "string"
+          "anyOf": [
+            {"type": "string"},
+            {"type": "number"}
+          ]
         },
         "randomize_questions": {
           "type": "boolean"
@@ -47,7 +53,10 @@
                     "include": {
                       "type": "array",
                       "items": {
-                        "type": "number"
+                        "anyOf": [
+                          {"type": "number"},
+                          {"type": "string"}
+                        ]
                       }
                     },
                     "max_age": {
@@ -116,9 +125,6 @@
           },
           "required": ["cohort", "expire", "deploy"]
         },
-        "type": {
-          "type": "string"
-        },
         "version": {
           "type": "number"
         },
@@ -155,7 +161,7 @@
         }
       },
       "required": [
-        "attribution_text", "display_icon", "display_name", "est_duration", "gamification_points", "priority", "schedule", "type", "visibility"
+        "display_icon", "display_name", "est_duration", "gamification_points", "priority", "schedule", "visibility"
       ]
     },
     "order": {

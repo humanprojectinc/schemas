@@ -7,27 +7,7 @@
         "type": "object",
         "properties": {
             "data": {
-                "type": "object",
-                "properties": {
-                  "data": {
-                    "type": "object",
-                    "properties": {
-                      "start": {
-                        "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
-                      }
-                    }
-                  },
-                  "end":{
-                     "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
-                  },
-                  "module": {
-                    "type": "string"
-                  },
-                  "start":{
-                    "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
-                  }
-                },
-                "required": ["data", "start", "end"]
+                "type": "object"
             },
             "identity": {
                 "type": "string"

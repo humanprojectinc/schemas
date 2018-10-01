@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "https://schemas.datacubed.com/ios/linkedin/003.json",
+    "index": "https://schemas.datacubed.com/index.json",
+    "type": "array",
+    "items":    {
+        "type": "object",
+        "properties": {
+            "num-connections": {
+                "type": "number"
+            },
+            "industry": {
+                "type": "string"
+            },
+            "num-connections-capped": {
+                "type": "boolean"
+            },
+            "location": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "country": {
+                        "type": "object",
+                        "properties": {
+                            "code": {
+                                "type": "string"
+                            }
+                        }
+                    }
+
+                }
+            }
+        },
+        "required": ["num-connections", "industry", "location"]
+    },
+    "minItems": 1
+}
