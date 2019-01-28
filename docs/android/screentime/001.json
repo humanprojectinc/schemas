@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://schemas.datacubed.com/android/screentime/001.json",
+  "index": "https://schemas.datacubed.com/index.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "startTime": {
+        "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
+      },
+      "endTime": {
+        "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
+      },
+      "appData": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "package": {
+              "type": "string",
+            },
+            "appName": {
+              "type": "string",
+            },
+            "totalTime": {
+              "type": "number",
+            },
+            "lastTime": {
+              "type": "numer",
+            }
+          }
+        }
+      },
+      "numberOfPickups": {
+        "type": "number",
+      },
+      "totalTime": {
+        "type": "number",
+      }
+    }
+  }
+}
