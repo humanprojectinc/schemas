@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "index": "https://schemas.datacubed.com/index.json",
+  "id": "https://schemas.datacubed.com/tasks/activity_tracker/v12.json",
+  "type": "object",
+  "required": [
+    "tutorial_end",
+    "activities"
+  ],
+   "properties": {
+     "tutorial_end": {
+       "type": "string"
+     },
+     "activities": {
+       "type": "array",
+       "items": {
+         "type": "object",
+         "required": [
+           "category",
+           "name",
+           "right_column",
+           "start_time",
+           "end_time"
+         ],
+         "properties": {
+           "category": {
+             "type": "string"
+           },
+           "name": {
+             "type": "string"
+           },
+           "right_column": {
+             "type": "string"
+           },
+           "start_time": {
+             "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
+           },
+           "end_time": {
+             "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
+           }
+         }
+       }
+     }
+   }
+ }
+
+
