@@ -1,64 +1,69 @@
-
-
 {
-  "platform": {
-    "survey": "https:\/\/schemas.datacubed.com\/platform\/survey.json"
+  "index": "https://schemas.datacubed.com/index.json",
+  "tasks": {
+    "activity_tracker": {
+      "v12": "https://schemas.datacubed.com/tasks/activity_tracker/v12.json"
+    }
   },
   "ios": {
-    "location": {
-      "005": "https:\/\/schemas.datacubed.com\/ios\/location\/005.json"
-    },
     "task": {
-      "005": "https:\/\/schemas.datacubed.com\/ios\/task\/005.json",
-      "004": "https:\/\/schemas.datacubed.com\/ios\/task\/004.json"
+      "005": "https://schemas.datacubed.com/ios/task/005.json",
+      "004": "https://schemas.datacubed.com/ios/task/004.json"
     },
     "battery": {
-      "003": "https:\/\/schemas.datacubed.com\/ios\/battery\/003.json"
-    },
-    "survey": {
-      "007": "https:\/\/schemas.datacubed.com\/ios\/survey\/007.json",
-      "006": "https:\/\/schemas.datacubed.com\/ios\/survey\/006.json"
-    },
-    "stepcounter": {
-      "005": "https:\/\/schemas.datacubed.com\/ios\/stepcounter\/005.json"
+      "003": "https://schemas.datacubed.com/ios/battery/003.json"
     },
     "linkedin": {
-      "003": "https:\/\/schemas.datacubed.com\/ios\/linkedin\/003.json"
+      "003": "https://schemas.datacubed.com/ios/linkedin/003.json"
+    },
+    "stepcounter": {
+      "005": "https://schemas.datacubed.com/ios/stepcounter/005.json"
+    },
+    "survey": {
+      "007": "https://schemas.datacubed.com/ios/survey/007.json",
+      "006": "https://schemas.datacubed.com/ios/survey/006.json"
+    },
+    "location": {
+      "005": "https://schemas.datacubed.com/ios/location/005.json"
     },
     "screentime": {
-      "001": "https:\/\/schemas.datacubed.com\/ios\/screentime\/001.json"
+      "001": "https://schemas.datacubed.com/ios/screentime/001.json"
     }
   },
+  "platform": {
+    "survey": "https://schemas.datacubed.com/platform/survey.json"
+  },
+  "definitions": "https://schemas.datacubed.com/definitions.json",
   "android": {
-    "twitter": {
-      "003": "https:\/\/schemas.datacubed.com\/android\/twitter\/003.json"
-    },
-    "appinstalled": {
-      "001": "https:\/\/schemas.datacubed.com\/android\/appinstalled\/001.json"
-    },
-    "location": {
-      "002": "https:\/\/schemas.datacubed.com\/android\/location\/002.json"
-    },
     "task": {
-      "002": "https:\/\/schemas.datacubed.com\/android\/task\/002.json"
+      "002": "https://schemas.datacubed.com/android/task/002.json"
     },
     "battery": {
-      "002": "https:\/\/schemas.datacubed.com\/android\/battery\/002.json"
+      "002": "https://schemas.datacubed.com/android/battery/002.json"
     },
-    "survey": {
-      "004": "https:\/\/schemas.datacubed.com\/android\/survey\/004.json"
+    "twitter": {
+      "003": "https://schemas.datacubed.com/android/twitter/003.json"
     },
-    "stepcounter": {
-      "003": "https:\/\/schemas.datacubed.com\/android\/stepcounter\/003.json"
-    },
-    "gmail": {
-      "003": "https:\/\/schemas.datacubed.com\/android\/gmail\/003.json"
+    "location": {
+      "002": "https://schemas.datacubed.com/android/location/002.json"
     },
     "linkedin": {
-      "001": "https:\/\/schemas.datacubed.com\/android\/linkedin\/001.json"
+      "001": "https://schemas.datacubed.com/android/linkedin/001.json"
+    },
+    "screentime": {
+      "001": "https://schemas.datacubed.com/android/screentime/001.json"
+    },
+    "survey": {
+      "004": "https://schemas.datacubed.com/android/survey/004.json"
+    },
+    "appinstalled": {
+      "001": "https://schemas.datacubed.com/android/appinstalled/001.json"
+    },
+    "stepcounter": {
+      "003": "https://schemas.datacubed.com/android/stepcounter/003.json"
+    },
+    "gmail": {
+      "003": "https://schemas.datacubed.com/android/gmail/003.json"
     }
-  },
-  "definitions": "https:\/\/schemas.datacubed.com\/definitions.json",
-  "index": "https:\/\/schemas.datacubed.com\/index.json"
+  }
 }
-
