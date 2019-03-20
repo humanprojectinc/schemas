@@ -6,20 +6,20 @@
     "items":    {
         "type": "object",
         "properties": {
-        	"totalscreentime": {
+        	"totalScreenTime": {
                 "type": "number"
             },
-            "numofpickups": {
+            "numOfPickups": {
                 "type": "number"
             },
-            "starttime": {
+            "startTime": {
                 "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
             },
-            "endtime": {
+            "endTime": {
                 "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
             }
         },
-        "required": ["totalscreentime", "numofpickups", "starttime", "endtime"]
+        "required": ["totalScreenTime", "numOfPickups", "startTime", "endTime"]
     },
     "minItems": 1
 }
