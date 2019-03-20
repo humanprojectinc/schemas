@@ -27,7 +27,7 @@
               "type": "number",
             },
             "lastTime": {
-              "type": "numer",
+              "type": "number",
             }
           }
         }
