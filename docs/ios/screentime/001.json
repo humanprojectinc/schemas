@@ -9,7 +9,7 @@
         	"totalScreenTime": {
                 "type": "number"
             },
-            "numOfPickups": {
+            "numberOfPickups": {
                 "type": "number"
             },
             "startTime": {

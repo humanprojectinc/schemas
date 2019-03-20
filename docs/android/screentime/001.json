@@ -18,25 +18,25 @@
           "type": "object",
           "properties": {
             "package": {
-              "type": "string",
+              "type": "string"
             },
             "appName": {
-              "type": "string",
+              "type": "string"
             },
             "totalTime": {
-              "type": "number",
+              "type": "number"
             },
             "lastTime": {
-              "type": "number",
+              "type": "number"
             }
           }
         }
       },
       "numberOfPickups": {
-        "type": "number",
+        "type": "number"
       },
       "totalScreenTime": {
-        "type": "number",
+        "type": "number"
       }
     }
   }
