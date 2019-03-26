@@ -19,7 +19,7 @@
                 "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
             }
         },
-        "required": ["totalScreenTime", "numOfPickups", "startTime", "endTime"]
+        "required": ["totalScreenTime", "numberOfPickups", "startTime", "endTime"]
     },
     "minItems": 1
 }
