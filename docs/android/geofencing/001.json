@@ -42,7 +42,7 @@
           "geofence_radius": {
               "type": "number",
               "minimum": 0
-          },
+          }
         },
         "required": ["geofence_name", "location_latitude", "location_longitude", "timestamp", "event_type", "geofence_radius", "geofence_latitude", "geofence_longitude", "location_accuracy"]
     }
