@@ -6,44 +6,44 @@
     "items":    {
         "type": "object",
         "properties": {
-          "geofence_name": {
+          "geofenceName": {
             "type": "string"
           },
-          "location_latitude": {
+          "locationLatitude": {
               "type": "number",
               "minimum": -90,
               "maximum": 90
           },
-          "location_longitude": {
+          "locationLongitude": {
               "type": "number",
               "minimum": -180,
               "maximum": 180
           },
-          "location_accuracy": {
+          "locationAccuracy": {
               "type": "number",
               "minimum": 0
           },
           "timestamp": {
               "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
           },
-          "geofence_latitude": {
+          "geofenceLatitude": {
               "type": "number",
               "minimum": -90,
               "maximum": 90
           },
-          "geofence_longitude": {
+          "geofenceLongitude": {
               "type": "number",
               "minimum": -180,
               "maximum": 180
           },
-          "event_type": {
+          "eventType": {
             "type": "string"
           },
-          "geofence_radius": {
+          "geofenceRadius": {
               "type": "number",
               "minimum": 0
           }
         },
-        "required": ["geofence_name", "location_latitude", "location_longitude", "timestamp", "event_type", "geofence_radius", "geofence_latitude", "geofence_longitude", "location_accuracy"]
+        "required": ["geofenceName", "locationLatitude", "locationLongitude", "timestamp", "eventType", "geofenceRadius", "geofenceLatitude", "geofenceLongitude", "locationAccuracy"]
     }
 }
