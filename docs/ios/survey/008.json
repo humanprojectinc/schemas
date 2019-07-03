@@ -58,7 +58,7 @@
 		"rating": { 
 			"type": "number"
 		},
-		"comments: {
+		"comments": {
 			"type": "string"
 		}
         },
