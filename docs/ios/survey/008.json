@@ -69,9 +69,7 @@
             "questions",
             "start",
             "state",
-            "version",
-		"rating",
-		"comments"
+            "version"
         ],
         "type": "object"
     },
