@@ -98,9 +98,7 @@
             "start",
             "state",
             "title",
-            "version",
-		"rating",
-		"comments"
+            "version"
         ],
         "type": "object"
     },
