@@ -1,0 +1,274 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "id": "http://schemas.datacubed.com/platform/survey.json",
+  "index": "https://schemas.datacubed.com/index.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "attribution_text": {
+          "type": "string"
+        },
+        "display_icon": {
+          "type": "string"
+        },
+        "display_name": {
+          "type": "string"
+        },
+        "est_duration": {
+          "type": "string",
+          "enum": ["short", "medium", "long"]
+        },
+        "gamification_points": {
+          "anyOf": [
+            {"type": "number"},
+            {"type": "string"}
+          ]
+        },
+        "priority": {
+          "anyOf": [
+            {"type": "string"},
+            {"type": "number"}
+          ]
+        },
+        "randomize_questions": {
+          "type": "boolean"
+        },
+        "schedule": {
+          "type": "object",
+          "properties": {
+            "cohort": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "filter": {
+                  "type": "object",
+                  "properties": {
+                    "include": {
+                      "type": "array",
+                      "items": {
+                        "anyOf": [
+                          {"type": "number"},
+                          {"type": "string"}
+                        ]
+                      }
+                    },
+                    "max_age": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "min_age": {
+                      "type": "number",
+                      "minimum": 0
+                    }
+                  }
+                }
+              },
+              "required": ["type"]
+            },
+            "deploy": {
+              "type": "object",
+              "properties": {
+                "first_login": {
+                  "type": "object",
+                  "properties": {
+                    "interval": {
+                      "type": "number"
+                    },
+                    "interval_type": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "now": {
+                  "type": "null"
+                },
+                "absolute": {
+                  "type": "number"
+                }
+              }
+            },
+            "expire": {
+              "type": "object",
+              "properties": {
+                "never": {
+                  "type": "null"
+                }
+              }
+            },
+            "recurring": {
+              "type": "object",
+              "properties": {
+                "interval": {
+                  "type": "number"
+                },
+                "interval_type": {
+                  "type": "string"
+                },
+                "recurrences": {
+                  "type": "number"
+                },
+                "scheme": {
+                  "type": "string"
+                },
+                "visible_days": {
+                  "type": "number"
+                }
+              }
+            }
+          },
+          "required": ["cohort", "expire", "deploy"]
+        },
+        "version": {
+          "type": "number"
+        },
+        "visibility": {
+          "type": "string"
+        },
+        "visibilityRanges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "end": {
+                "anyOf": [
+                  {
+                    "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "start": {
+                "anyOf": [
+                  {
+                    "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "required": [
+        "display_icon", "display_name", "est_duration", "gamification_points", "priority", "schedule", "visibility"
+      ]
+    },
+    "order": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "questions": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z0-9]{7}$": {
+          "type": "object",
+          "properties": {
+            "attributes": {
+              "type": "object",
+              "properties": {
+                "randomize_options": {
+                  "type": "boolean"
+                },
+                "required": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "choices": {
+              "type": "object",
+              "patternProperties": {
+                ".*": {
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": "string"
+                    },
+                    "choice_label": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "choices_order": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "label": {
+              "type": "string"
+            },
+            "logic": {
+              "type": "object",
+              "properties": {
+                "show_if": {
+                  "type": "object",
+                  "properties": {
+                    "comparator": {
+                      "type": "string"
+                    },
+                    "operator": {
+                      "type": "string",
+                      "enum": ["and", "or"]
+                    },
+                    "terms": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "comparator": {
+                            "type": "string"
+                          },
+                          "question_id": {
+                            "type": "string"
+                          },
+                          "question_type": {
+                            "type": "string"
+                          },
+                          "value": {
+                            "anyOf": [
+                              {
+                                "type": "string"
+                              },
+                              {
+                                "type": "number"
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "type": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "title": {
+      "type": "string"
+    }
+  },
+  "required": ["id", "metadata", "order", "questions", "title"]
+}
