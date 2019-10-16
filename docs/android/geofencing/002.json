@@ -39,6 +39,6 @@
               "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
           }
         },
-        "required": ["id", "name", "event_type", "timestamp", "last_updated", "latitude", "longitude", "radius", "snoozed"]
+        "required": ["id", "name", "event_type", "timestamp", "last_updated", "latitude", "longitude", "radius"]
     }
 }
