@@ -2,35 +2,40 @@
     "$schema": "http://json-schema.org/schema#",
     "id": "https://schemas.datacubed.com/ios/medadherence/001.json",
     "index": "https://schemas.datacubed.com/index.json",
-    "type": "array",
-    "items":    {
-        "type": "object",
-        "properties": {
-            "id": {
-                "type": "string"
+    "type":"object",
+    "properties":{
+      "medications":{
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "timestamp": {
+                    "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
+                },
+                "body_part": {
+                    "type": "string",
+                    "enum": ["left_arm", "right_arm", "left_abdomen", "right_abdomen", "left_thigh", "right_thigh", "left_buttock", "right_buttock", "unknown"]
+                },
+                "body_part_str": {
+                    "type": "string"
+                },
+                "medication_time": {
+                    "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
+                },
+                "medication_type": {
+                    "type": "string",
+                    "enum": ["injection"]
+                },
+                "administered": {
+                    "type": "boolean"
+                }
             },
-            "timestamp": {
-                "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
-            },
-            "body_part": {
-                "type": "string",
-                "enum": ["left_arm", "right_arm", "left_abdomen", "right_abdomen", "left_thigh", "right_thigh", "left_buttock", "right_buttock", "unknown"]
-            },
-            "body_part_str": {
-                "type": "string"
-            },
-            "medication_time": {
-                "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
-            },
-            "medication_type": {
-                "type": "string",
-                "enum": ["injection"]
-            },
-            "administered": {
-                "type": "boolean"
-            }
+            "required": ["id", "timestamp", "body_part", "body_part_str", "medication_time", "medication_type", "administered"]
         },
-        "required": ["id", "timestamp", "body_part", "body_part_str", "medication_time", "medication_type", "administered"]
-    },
-    "minItems": 1
+          "minItems": 1
+      }
+    }
 }
