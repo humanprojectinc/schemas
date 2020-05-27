@@ -13,14 +13,35 @@
                 "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
             },
             "body_part": {
-                "type": "string",
-                "enum": ["left_arm", "right_arm", "left_abdomen", "right_abdomen", "left_thigh", "right_thigh", "left_buttock", "right_buttock", "unknown"]
+              "anyOf": [
+                    {
+                        "type": "null"
+                    },
+                    {
+                        "type": "string",
+                        "enum": ["left_arm", "right_arm", "left_abdomen", "right_abdomen", "left_thigh", "right_thigh", "left_buttock", "right_buttock", "unknown"]
+                    }
+                ]
             },
             "body_part_str": {
-                "type": "string"
+                "anyOf": [
+                    {
+                        "type": "null"
+                    },
+                    {
+                        "type": "string"
+                    }
+                ]
             },
             "medication_time": {
-                "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
+                "anyOf": [
+                    {
+                        "type": "null"
+                    },
+                    {   
+                        "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
+                    }
+                ]
             },
             "medication_type": {
                 "type": "string",
