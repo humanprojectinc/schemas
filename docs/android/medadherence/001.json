@@ -19,7 +19,7 @@
                     },
                     {
                         "type": "string",
-                        "enum": ["left_arm", "right_arm", "left_abdomen", "right_abdomen", "left_thigh", "right_thigh", "left_buttock", "right_buttock", "unknown"]
+                        "enum": ["left_arm", "right_arm", "left_abdomen", "right_abdomen", "left_thigh", "right_thigh", "left_buttock", "right_buttock", "unknown", ""]
                     }
                 ]
             },
