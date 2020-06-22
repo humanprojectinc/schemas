@@ -64,8 +64,7 @@
                     "window": {
                       "$id": "#root/conditions/items/triggers/items/resource_function_params/window",
                       "title": "Window",
-                      "type": "string",
-                      "pattern": "^.*$"
+                      "type": "integer"
                     },
                     "logical_operator": {
                       "$id": "#root/conditions/items/triggers/items/resource_function_params/logical_operator",
