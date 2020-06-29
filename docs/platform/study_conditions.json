@@ -1,0 +1,171 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1592241468.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "conditions"
+  ],
+  "properties": {
+    "conditions": {
+      "$id": "#root/conditions",
+      "title": "Conditions",
+      "type": "array",
+      "default": [],
+      "items": {
+        "$id": "#root/conditions/items",
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "triggers",
+          "action",
+          "schedule"
+        ],
+        "properties": {
+          "triggers": {
+            "$id": "#root/conditions/items/triggers",
+            "title": "Triggers",
+            "type": "array",
+            "default": [],
+            "items": {
+              "$id": "#root/conditions/items/triggers/items",
+              "title": "Items",
+              "type": "object",
+              "required": [
+                "resource_type",
+                "resource_function_name",
+                "resource_function_params"
+              ],
+              "properties": {
+                "resource_type": {
+                  "$id": "#root/conditions/items/triggers/items/resource_type",
+                  "title": "Resource_type",
+                  "type": "string",
+                  "pattern": "^.*$"
+                },
+                "resource_function_name": {
+                  "$id": "#root/conditions/items/triggers/items/resource_function_name",
+                  "title": "Resource_function_name",
+                  "type": "string",
+                  "pattern": "^.*$"
+                },
+                "resource_function_params": {
+                  "$id": "#root/conditions/items/triggers/items/resource_function_params",
+                  "title": "Resource_function_params",
+                  "type": "object",
+                  "properties": {
+                    "medication_count": {
+                      "$id": "#root/conditions/items/triggers/items/resource_function_params/medication_count",
+                      "title": "Medication_count",
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "window": {
+                      "$id": "#root/conditions/items/triggers/items/resource_function_params/window",
+                      "title": "Window",
+                      "type": "integer"
+                    },
+                    "logical_operator": {
+                      "$id": "#root/conditions/items/triggers/items/resource_function_params/logical_operator",
+                      "title": "Logical_operator",
+                      "type": "string",
+                      "enum": [
+                        "==",
+                        ">=",
+                        "<=",
+                        ">",
+                        "<"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "action": {
+            "$id": "#root/conditions/items/action",
+            "title": "Action",
+            "type": "object",
+            "required": [
+              "type",
+              "action_params"
+            ],
+            "properties": {
+              "type": {
+                "$id": "#root/conditions/items/action/type",
+                "title": "Type",
+                "type": "string",
+                "enum": [
+                  "send_push_notification"
+                ]
+              },
+              "action_params": {
+                "$id": "#root/conditions/items/action/action_params",
+                "title": "Action_params",
+                "type": "object",
+                "required": [
+                  "body",
+                  "title"
+                ],
+                "properties": {
+                  "text": {
+                    "$id": "#root/conditions/items/action/action_params/text",
+                    "title": "Text",
+                    "type": "string",
+                    "pattern": "^.*$"
+                  },
+                  "title": {
+                    "$id": "#root/conditions/items/action/action_params/title",
+                    "title": "Title",
+                    "type": "string",
+                    "pattern": "^.*$"
+                  }
+                }
+              }
+            }
+          },
+          "schedule": {
+            "$id": "#root/conditions/items/schedule",
+            "title": "Schedule",
+            "type": "object",
+            "required": [
+              "start_date"
+            ],
+            "properties": {
+              "start_date": {
+                "$id": "#root/conditions/items/schedule/start_date",
+                "title": "Start_date",
+                "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
+              },
+              "recurrence_rule": {
+                "$id": "#root/conditions/items/schedule/recurrence_rule",
+                "title": "Recurrence_rule",
+                "type": "object",
+                "required": [
+                  "frequency",
+                  "interval"
+                ],
+                "properties": {
+                  "frequency": {
+                    "$id": "#root/conditions/items/schedule/recurrence_rule/frequency",
+                    "title": "Frequency",
+                    "type": "string",
+                    "enum": [
+                      "yearly", "monthly", "weekly", "daily", "hourly", "minutely", "secondly"
+                    ]
+                  },
+                  "interval": {
+                    "$id": "#root/conditions/items/schedule/recurrence_rule/interval",
+                    "title": "Interval",
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
