@@ -52,7 +52,7 @@
                   "type": "integer",
                   "minimum": 0
                 },
-                 "instrument_score": {
+                "instrument_score": {
                   "$id": "#root/conditions/items/triggers/items/resource_function_params/instrument_score",
                   "title": "Instrument_score",
                   "type": "integer",
@@ -97,73 +97,93 @@
               "send_push_notification",
               "create_virtual_visit_emergency_call"
             ]
-          },
-          "action_params": {
-            "$id": "#root/conditions/items/action/action_params",
-            "title": "Action_params",
-            "type": "object",
-            "required": [
-              "body",
-              "title"
-            ],
-            "properties": {
-              "text": {
-                "$id": "#root/conditions/items/action/action_params/text",
-                "title": "Text",
-                "type": "string",
-                "pattern": "^.*$"
-              },
-              "title": {
-                "$id": "#root/conditions/items/action/action_params/title",
-                "title": "Title",
-                "type": "string",
-                "pattern": "^.*$"
+          }
+        },
+        "if": {
+          "properties": {
+            "type": {
+              "const": "send_push_notification"
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "action_params": {
+              "$id": "#root/conditions/items/action/action_params",
+              "title": "Action_params",
+              "type": "object",
+              "required": [
+                "body",
+                "title"
+              ],
+              "properties": {
+                "text": {
+                  "$id": "#root/conditions/items/action/action_params/text",
+                  "title": "Text",
+                  "type": "string",
+                  "pattern": "^.*$"
+                },
+                "title": {
+                  "$id": "#root/conditions/items/action/action_params/title",
+                  "title": "Title",
+                  "type": "string",
+                  "pattern": "^.*$"
+                }
               }
             }
           }
+        },
+        "else": {
+          "properties": {
+            "action_params": {
+              "$id": "#root/conditions/items/action/action_params",
+              "title": "Action_params",
+              "type": "object"
+            }
+          }
         }
-      },
-      "schedule": {
-        "$id": "#root/conditions/items/schedule",
-        "title": "Schedule",
-        "type": "object",
-        "required": [
-          "start_date"
-        ],
-        "properties": {
-          "start_date": {
-            "$id": "#root/conditions/items/schedule/start_date",
-            "title": "Start_date",
-            "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
-          },
-          "recurrence_rule": {
-            "$id": "#root/conditions/items/schedule/recurrence_rule",
-            "title": "Recurrence_rule",
-            "type": "object",
-            "required": [
-              "frequency",
-              "interval"
-            ],
-            "properties": {
-              "frequency": {
-                "$id": "#root/conditions/items/schedule/recurrence_rule/frequency",
-                "title": "Frequency",
-                "type": "string",
-                "enum": [
-                  "yearly",
-                  "monthly",
-                  "weekly",
-                  "daily",
-                  "hourly",
-                  "minutely",
-                  "secondly"
-                ]
-              },
-              "interval": {
-                "$id": "#root/conditions/items/schedule/recurrence_rule/interval",
-                "title": "Interval",
-                "type": "integer"
-              }
+      }
+    },
+    "schedule": {
+      "$id": "#root/conditions/items/schedule",
+      "title": "Schedule",
+      "type": "object",
+      "required": [
+        "start_date"
+      ],
+      "properties": {
+        "start_date": {
+          "$id": "#root/conditions/items/schedule/start_date",
+          "title": "Start_date",
+          "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
+        },
+        "recurrence_rule": {
+          "$id": "#root/conditions/items/schedule/recurrence_rule",
+          "title": "Recurrence_rule",
+          "type": "object",
+          "required": [
+            "frequency",
+            "interval"
+          ],
+          "properties": {
+            "frequency": {
+              "$id": "#root/conditions/items/schedule/recurrence_rule/frequency",
+              "title": "Frequency",
+              "type": "string",
+              "enum": [
+                "yearly",
+                "monthly",
+                "weekly",
+                "daily",
+                "hourly",
+                "minutely",
+                "secondly"
+              ]
+            },
+            "interval": {
+              "$id": "#root/conditions/items/schedule/recurrence_rule/interval",
+              "title": "Interval",
+              "type": "integer"
             }
           }
         }
