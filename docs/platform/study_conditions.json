@@ -52,6 +52,12 @@
                   "type": "integer",
                   "minimum": 0
                 },
+                 "instrument_score": {
+                  "$id": "#root/conditions/items/triggers/items/resource_function_params/instrument_score",
+                  "title": "Instrument_score",
+                  "type": "integer",
+                  "minimum": 0
+                },
                 "window": {
                   "$id": "#root/conditions/items/triggers/items/resource_function_params/window",
                   "title": "Window",
@@ -88,7 +94,8 @@
             "title": "Type",
             "type": "string",
             "enum": [
-              "send_push_notification"
+              "send_push_notification",
+              "create_virtual_visit_emergency_call"
             ]
           },
           "action_params": {
