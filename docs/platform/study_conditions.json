@@ -109,7 +109,8 @@
                 "required": [
                   "instrument_score",
                   "logical_operator",
-                  "window"
+                  "window",
+                  "instrument_id"
                 ],
                 "properties": {
                   "instrument_score": {
@@ -122,6 +123,11 @@
                     "$id": "#root/conditions/items/triggers/items/resource_function_params/window",
                     "title": "Window",
                     "type": "integer"
+                  },
+                  "instrument_id": {
+                    "$id": "#root/conditions/items/triggers/items/resource_function_params/instrument_id",
+                    "title": "Instrument_id",
+                    "type": "string"
                   },
                   "logical_operator": {
                     "$id": "#root/conditions/items/triggers/items/resource_function_params/logical_operator",
