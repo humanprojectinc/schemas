@@ -1,0 +1,44 @@
+{
+  "schedule": {
+    "$id": "#root/conditions/items/schedule",
+    "title": "Schedule",
+    "type": "object",
+    "properties": {
+      "start_date": {
+        "$id": "#root/conditions/items/schedule/start_date",
+        "title": "Start_date",
+        "$ref": "https://schemas.datacubed.com/definitions.json#/timestamp_def"
+      },
+      "recurrence_rule": {
+        "$id": "#root/conditions/items/schedule/recurrence_rule",
+        "title": "Recurrence_rule",
+        "type": "object",
+        "required": [
+          "frequency",
+          "interval"
+        ],
+        "properties": {
+          "frequency": {
+            "$id": "#root/conditions/items/schedule/recurrence_rule/frequency",
+            "title": "Frequency",
+            "type": "string",
+            "enum": [
+              "yearly",
+              "monthly",
+              "weekly",
+              "daily",
+              "hourly",
+              "minutely",
+              "secondly"
+            ]
+          },
+          "interval": {
+            "$id": "#root/conditions/items/schedule/recurrence_rule/interval",
+            "title": "Interval",
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}

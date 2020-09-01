@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "action": {
+      "$id": "#root/conditions/items/action",
+      "title": "Action",
+      "type": "object",
+      "required": [
+        "type",
+        "action_params"
+      ],
+      "properties": {
+        "type": {
+          "$id": "#root/conditions/items/action/type",
+          "title": "Type",
+          "type": "string",
+          "enum": [
+            "create_virtual_visit_emergency_call"
+          ]
+        },
+        "action_params": {
+          "$id": "#root/conditions/items/action/create_virtual_visit_emergency_call/action_params",
+          "title": "Action_params",
+          "type": "object"
+        }
+      }
+    }
+  }
+}
