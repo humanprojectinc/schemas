@@ -1,0 +1,71 @@
+{
+  "definitions": {
+    "$id": "#instrument_scoring",
+    "title": "Triggers",
+    "type": "array",
+    "default": [],
+    "items": {
+      "title": "Items",
+      "type": "object",
+      "required": [
+        "resource_type",
+        "resource_function_name",
+        "resource_function_params"
+      ],
+      "properties": {
+        "resource_type": {
+          "title": "Resource_type",
+          "type": "string",
+          "pattern": "^.*$",
+          "enum": [
+            "instrument_scoring"
+          ]
+        },
+        "resource_function_name": {
+          "title": "Resource_function_name",
+          "type": "string",
+          "pattern": "^.*$",
+          "enum": [
+            "get_instrument_scores"
+          ]
+        },
+        "resource_function_params": {
+          "title": "Resource_function_params",
+          "type": "object",
+          "required": [
+            "instrument_score",
+            "logical_operator",
+            "window",
+            "instrument_id"
+          ],
+          "properties": {
+            "instrument_score": {
+              "title": "Instrument_score",
+              "type": "integer",
+              "minimum": 0
+            },
+            "window": {
+              "title": "Window",
+              "type": "integer"
+            },
+            "instrument_id": {
+              "title": "Instrument_id",
+              "type": "string"
+            },
+            "logical_operator": {
+              "title": "Logical_operator",
+              "type": "string",
+              "enum": [
+                "==",
+                ">=",
+                "<=",
+                ">",
+                "<"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

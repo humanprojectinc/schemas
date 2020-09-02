@@ -1,0 +1,44 @@
+{
+  "definition": {
+    "$id": "#send_push_notification",
+    "properties": {
+      "action": {
+        "title": "Action",
+        "type": "object",
+        "required": [
+          "type",
+          "action_params"
+        ],
+        "properties": {
+          "type": {
+            "title": "Type",
+            "type": "string",
+            "enum": [
+              "send_push_notification"
+            ]
+          },
+          "action_params": {
+            "title": "Action_params",
+            "type": "object",
+            "required": [
+              "body",
+              "title"
+            ],
+            "properties": {
+              "text": {
+                "title": "Text",
+                "type": "string",
+                "pattern": "^.*$"
+              },
+              "title": {
+                "title": "Title",
+                "type": "string",
+                "pattern": "^.*$"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

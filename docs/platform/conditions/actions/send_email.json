@@ -1,0 +1,50 @@
+{
+  "definitions": {
+    "$id": "#send_email",
+    "properties": {
+      "action": {
+        "title": "Action",
+        "type": "object",
+        "required": [
+          "type",
+          "action_params"
+        ],
+        "properties": {
+          "type": {
+            "title": "Type",
+            "type": "string",
+            "enum": [
+              "send_email"
+            ]
+          },
+          "properties": {
+            "action_params": {
+              "title": "Action_params",
+              "type": "object",
+              "required": [
+                "role_ids",
+                "site_ids",
+                "email_template"
+              ],
+              "properties": {
+                "role_ids": {
+                  "title": "Text",
+                  "type": "array"
+                },
+                "site_ids": {
+                  "title": "Title",
+                  "type": "array"
+                },
+                "email_template": {
+                  "title": "Title",
+                  "type": "string",
+                  "pattern": "^.*$"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

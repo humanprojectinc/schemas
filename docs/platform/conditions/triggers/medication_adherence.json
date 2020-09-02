@@ -1,0 +1,66 @@
+{
+  "definitions": {
+    "$id": "#medication_adherence",
+    "title": "Triggers",
+    "type": "array",
+    "default": [],
+    "items": {
+      "title": "Items",
+      "type": "object",
+      "required": [
+        "resource_type",
+        "resource_function_name",
+        "resource_function_params"
+      ],
+      "properties": {
+        "resource_type": {
+          "title": "Resource_type",
+          "type": "string",
+          "pattern": "^.*$",
+          "enum": [
+            "medication_adherence"
+          ]
+        },
+        "resource_function_name": {
+          "title": "Resource_function_name",
+          "type": "string",
+          "pattern": "^.*$",
+          "enum": [
+            "get_medication_count"
+          ]
+        },
+        "resource_function_params": {
+          "title": "Resource_function_params",
+          "type": "object",
+          "required": [
+            "medication_count",
+            "logical_operator",
+            "window"
+          ],
+          "properties": {
+            "medication_count": {
+              "title": "Medication_count",
+              "type": "integer",
+              "minimum": 0
+            },
+            "window": {
+              "title": "Window",
+              "type": "integer"
+            },
+            "logical_operator": {
+              "title": "Logical_operator",
+              "type": "string",
+              "enum": [
+                "==",
+                ">=",
+                "<=",
+                ">",
+                "<"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
