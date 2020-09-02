@@ -15,33 +15,33 @@
       "triggers": {
         "anyOf": [
           {
-            "$ref": "triggers/instrument.json#instrument"
+            "$ref": "https://schemas.datacubed.com/platform/conditions/triggers/instrument.json#instrument"
           },
           {
-            "$ref": "triggers/instrument_scoring.json#instrument_scoring"
+            "$ref": "https://schemas.datacubed.com/platform/conditions/triggers/instrument_scoring.json#instrument_scoring"
           },
           {
-            "$ref": "triggers/medication_adherence.json#medication_adherence"
+            "$ref": "https://schemas.datacubed.com/platform/conditions/triggers/medication_adherence.json#medication_adherence"
           }
         ]
       },
       "action": {
         "anyOf": [
           {
-            "$ref": "actions/send_email.json#send_email"
+            "$ref": "https://schemas.datacubed.com/platform/conditions/actions/send_email.json#send_email"
           },
           {
-            "$ref": "actions/send_push_notification.json#send_push_notification"
+            "$ref": "https://schemas.datacubed.com/platform/conditions/actions/send_push_notification.json#send_push_notification"
           },
           {
-            "$ref": "actions/create_virtual_visit_emergency_call.json#create_virtual_visit_emergency_call"
+            "$ref": "https://schemas.datacubed.com/platform/conditions/actions/create_virtual_visit_emergency_call.json#create_virtual_visit_emergency_call"
           }
         ]
       },
       "schedule": {
         "anyOf": [
           {
-            "$ref": "schedule/schedule.json#schedule"
+            "$ref": "https://schemas.datacubed.com/platform/conditions/schedule/schedule.json#schedule"
           }
         ]
       }
