@@ -1,69 +1,64 @@
 {
-  "$id": "#root/conditions/items/triggers",
-  "title": "Triggers",
-  "type": "array",
-  "default": [],
-  "items": {
-    "$id": "#root/conditions/items/triggers/items",
-    "title": "Items",
-    "type": "object",
-    "required": [
-      "resource_type",
-      "resource_function_name",
-      "resource_function_params"
-    ],
-    "properties": {
-      "resource_type": {
-        "$id": "#root/conditions/items/triggers/items/resource_type",
-        "title": "Resource_type",
-        "type": "string",
-        "pattern": "^.*$",
-        "enum": [
-          "instrument"
-        ]
-      },
-      "resource_function_name": {
-        "$id": "#root/conditions/items/triggers/items/resource_function_name",
-        "title": "Resource_function_name",
-        "type": "string",
-        "pattern": "^.*$",
-        "enum": [
-          "get_instrument_compliance"
-        ]
-      },
-      "resource_function_params": {
-        "$id": "#root/conditions/items/triggers/items/resource_function_params/instrument_compliance",
-        "title": "Resource_function_params",
-        "type": "object",
-        "required": [
-          "completion_comparison",
-          "logical_operator",
-          "window",
-          "instrument_id"
-        ],
-        "properties": {
-          "completion_comparison": {
-            "$id": "#root/conditions/items/triggers/items/resource_function_params/instrument/completion_comparison",
-            "title": "Medication_count",
-            "type": "integer",
-            "minimum": 0
-          },
-          "window": {
-            "$id": "#root/conditions/items/triggers/items/resource_function_params/instrument/window",
-            "title": "Window",
-            "type": "integer"
-          },
-          "logical_operator": {
-            "$id": "#root/conditions/items/triggers/items/resource_function_params/instrument/logical_operator",
-            "title": "Logical_operator",
-            "type": "string",
-            "enum": [
-              "==",
-              ">=",
-              "<=",
-              ">",
-              "<"
-            ]
+  "definitions": {
+    "$id": "#instrument",
+    "title": "Triggers",
+    "type": "array",
+    "default": [],
+    "items": {
+      "title": "Items",
+      "type": "object",
+      "required": [
+        "resource_type",
+        "resource_function_name",
+        "resource_function_params"
+      ],
+      "properties": {
+        "resource_type": {
+          "title": "Resource_type",
+          "type": "string",
+          "pattern": "^.*$",
+          "enum": [
+            "instrument"
+          ]
+        },
+        "resource_function_name": {
+          "title": "Resource_function_name",
+          "type": "string",
+          "pattern": "^.*$",
+          "enum": [
+            "get_instrument_compliance"
+          ]
+        },
+        "resource_function_params": {
+          "title": "Resource_function_params",
+          "type": "object",
+          "required": [
+            "completion_comparison",
+            "logical_operator",
+            "window",
+            "instrument_id"
+          ],
+          "properties": {
+            "completion_comparison": {
+              "title": "Medication_count",
+              "type": "integer",
+              "minimum": 0
+            },
+            "window": {
+              "title": "Window",
+              "type": "integer"
+            },
+            "logical_operator": {
+              "title": "Logical_operator",
+              "type": "string",
+              "enum": [
+                "==",
+                ">=",
+                "<=",
+                ">",
+                "<"
+              ]
+            }
           }
         }
       }

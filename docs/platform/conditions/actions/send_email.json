@@ -1,48 +1,45 @@
 {
-  "properties": {
-    "action": {
-      "$id": "#root/conditions/items/action",
-      "title": "Action",
-      "type": "object",
-      "required": [
-        "type",
-        "action_params"
-      ],
-      "properties": {
-        "type": {
-          "$id": "#root/conditions/items/action/type",
-          "title": "Type",
-          "type": "string",
-          "enum": [
-            "send_email"
-          ]
-        },
+  "definitions": {
+    "$id": "#send_email",
+    "properties": {
+      "action": {
+        "title": "Action",
+        "type": "object",
+        "required": [
+          "type",
+          "action_params"
+        ],
         "properties": {
-          "action_params": {
-            "$id": "#root/conditions/items/action/send_email/action_params",
-            "title": "Action_params",
-            "type": "object",
-            "required": [
-              "role_ids",
-              "site_ids",
-              "email_template"
-            ],
-            "properties": {
-              "role_ids": {
-                "$id": "#root/conditions/items/action/send_email/action_params/text",
-                "title": "Text",
-                "type": "array"
-              },
-              "site_ids": {
-                "$id": "#root/conditions/items/action/send_email/action_params/title",
-                "title": "Title",
-                "type": "array"
-              },
-              "email_template": {
-                "$id": "#root/conditions/items/action/send_email/action_params/title",
-                "title": "Title",
-                "type": "string",
-                "pattern": "^.*$"
+          "type": {
+            "title": "Type",
+            "type": "string",
+            "enum": [
+              "send_email"
+            ]
+          },
+          "properties": {
+            "action_params": {
+              "title": "Action_params",
+              "type": "object",
+              "required": [
+                "role_ids",
+                "site_ids",
+                "email_template"
+              ],
+              "properties": {
+                "role_ids": {
+                  "title": "Text",
+                  "type": "array"
+                },
+                "site_ids": {
+                  "title": "Title",
+                  "type": "array"
+                },
+                "email_template": {
+                  "title": "Title",
+                  "type": "string",
+                  "pattern": "^.*$"
+                }
               }
             }
           }
