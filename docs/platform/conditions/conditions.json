@@ -15,7 +15,7 @@
       "triggers": {
         "anyOf": [
           {
-            "$ref": "https://schemas.datacubed.com/platform/conditions/triggers/instrument.json#instrument"
+            "$ref": "triggers/instrument.json#"
           },
           {
             "$ref": "https://schemas.datacubed.com/platform/conditions/triggers/instrument_scoring.json#instrument_scoring"
@@ -28,7 +28,7 @@
       "action": {
         "anyOf": [
           {
-            "$ref": "https://schemas.datacubed.com/platform/conditions/actions/send_email.json#send_email"
+            "$ref": "actions/send_email.json#"
           },
           {
             "$ref": "https://schemas.datacubed.com/platform/conditions/actions/send_push_notification.json#send_push_notification"
