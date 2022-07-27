@@ -42,10 +42,7 @@
           "type": "object",
           "properties": {
             "cohort": {
-		"anyOf": [
-	        	{"type": "object"},
-			{"type": "array"}
-		],
+              "type": "object",
               "properties": {
                 "type": {
                   "type": "string"
